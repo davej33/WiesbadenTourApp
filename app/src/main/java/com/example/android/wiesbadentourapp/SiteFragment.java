@@ -46,12 +46,6 @@ public class SiteFragment extends Fragment {
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.colorAccent);
         ListView listView = (ListView) rootView.findViewById(R.id.list_view_id);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TourInfoItem item = items.get(position);
-            }
-        });
 
         return rootView;
 

@@ -12,6 +12,8 @@ public class TourInfoItem {
     private int mImageResourceID;
     private String mWebsite;
     private String mCoordinates;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     public TourInfoItem (String name, String hours, String cost, int image, String website, String coordinates){
         mTourItemName = name;
@@ -45,5 +47,12 @@ public class TourInfoItem {
 
     public String getmCoordinates() {
         return mCoordinates;
+    }
+
+    public int getmImageResourceId() {
+        return mImageResourceId;
+    }
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 }
