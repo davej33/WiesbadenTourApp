@@ -8,5 +8,9 @@ public class FoodDrinkActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_category);
+
+        // inserts related fragment into layout textview.
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new FoodDrinkFragment()).commit();
     }
 }
