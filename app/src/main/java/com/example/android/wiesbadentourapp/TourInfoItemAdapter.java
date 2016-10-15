@@ -1,6 +1,7 @@
 package com.example.android.wiesbadentourapp;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,8 +34,12 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
 
         final TourInfoItem currentItem = getItem(position);
 
-        TextView name = (TextView) listItemView.findViewById(R.id.name_view);
-        name.setText(currentItem.getmTourItemName());
+        TextView defaultName = (TextView) listItemView.findViewById(R.id.default_name_view);
+        defaultName.setText(currentItem.getmTourItemNameDefault());
+
+        TextView germanName = (TextView) listItemView.findViewById(R.id.german_name_view);
+        germanName.setText(currentItem.getmTourItemNameGerman());
+        germanName.setTypeface(null, Typeface.BOLD);
 
         TextView hours = (TextView) listItemView.findViewById(R.id.hours_view);
         hours.setText(currentItem.getmHoursOpen());
@@ -43,13 +48,15 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
         cost.setText(currentItem.getmCost());
 
 
-        ImageView image = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView image = (ImageView) listItemView.findViewById(R.id.image_view);
+        image.setImageResource(currentItem.getmImageResourceID());
+        /*
         if (currentItem.hasImage()){
             image.setImageResource(currentItem.getmImageResourceID());
             image.setVisibility(View.VISIBLE);
         } else {
             image.setVisibility(View.GONE);
-        }
+        }*/
 
         final View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorID);

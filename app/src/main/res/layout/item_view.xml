@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/object_background"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="80dp"
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/image_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="8dp"
-        android:paddingTop="8dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_height="match_parent"
+        />
 
     <LinearLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_toRightOf="@+id/image"
-        android:paddingLeft="16dp"
-        android:layout_gravity="center_vertical"
-        >
+        android:layout_toRightOf="@+id/image_view"
+        android:paddingLeft="8dp"
+        android:layout_gravity="center_vertical">
 
         <TextView
-            android:id="@+id/name_view"
+            android:id="@+id/german_name_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Site Name"/>
+            tools:text="German Site Name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/default_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Default Site Name"
+            android:textStyle="italic"/>
+
 
         <TextView
             android:id="@+id/hours_view"
@@ -46,8 +53,9 @@
 
 
     <ImageButton
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"/>
+        android:src="@drawable/lets_go"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
 </RelativeLayout>

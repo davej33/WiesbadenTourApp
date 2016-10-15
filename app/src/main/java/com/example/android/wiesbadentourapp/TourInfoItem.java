@@ -6,7 +6,8 @@ package com.example.android.wiesbadentourapp;
 
 public class TourInfoItem {
 
-    private String mTourItemName;
+    private String mTourItemNameGerman;
+    private String mTourItemNameDefault;
     private String mHoursOpen;
     private String mCost;
     private int mImageResourceID;
@@ -15,8 +16,9 @@ public class TourInfoItem {
     private int mImageResourceId = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public TourInfoItem (String name, String hours, String cost, int image, String website, String coordinates){
-        mTourItemName = name;
+    public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image, String website, String coordinates){
+        mTourItemNameGerman = germanName;
+        mTourItemNameDefault = defaultName;
         mHoursOpen = hours;
         mCost = cost;
         mImageResourceID = image;
@@ -25,8 +27,12 @@ public class TourInfoItem {
     }
 
     // getter methods
-    public String getmTourItemName() {
-        return mTourItemName;
+    public String getmTourItemNameGerman() {
+        return mTourItemNameGerman;
+    }
+
+    public String getmTourItemNameDefault() {
+        return mTourItemNameDefault;
     }
 
     public String getmHoursOpen() {
@@ -49,9 +55,6 @@ public class TourInfoItem {
         return mCoordinates;
     }
 
-    public int getmImageResourceId() {
-        return mImageResourceId;
-    }
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }

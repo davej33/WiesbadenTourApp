@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- TO DO:
+1. change icon
+
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.wiesbadentourapp">
 
@@ -18,7 +23,7 @@
         <activity android:name=".SiteActivity" />
         <activity android:name=".FoodDrinkActivity" />
         <activity android:name=".FestivalsActivity" />
-        <activity android:name=".PhrasesActivity"></activity>
+        <activity android:name=".PhrasesActivity"/>
     </application>
 
 </manifest>
