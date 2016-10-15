@@ -10,52 +10,98 @@
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
         android:layout_toRightOf="@+id/image_view"
-        android:paddingLeft="8dp"
-        android:layout_gravity="center_vertical">
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
 
-        <TextView
-            android:id="@+id/german_name_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="German Site Name"
-            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/default_name_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Default Site Name"
-            android:textStyle="italic"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/german_flag" />
 
+            <TextView
+                android:id="@+id/german_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:textStyle="bold"
+                tools:text="German Site Name" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/hours_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Site Detail 1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/cost_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Site Detail 2"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/us_flag" />
 
+            <TextView
+                android:id="@+id/default_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:textStyle="italic"
+                tools:text="Default Site Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/clock" />
+
+            <TextView
+                android:id="@+id/hours_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                tools:text="Site Detail 1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/euro" />
+
+            <TextView
+                android:id="@+id/cost_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Site Detail 2"
+                android:paddingLeft="4dp"/>
+        </LinearLayout>
     </LinearLayout>
 
 
     <ImageButton
-        android:src="@drawable/lets_go"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:src="@drawable/lets_go" />
 </RelativeLayout>
