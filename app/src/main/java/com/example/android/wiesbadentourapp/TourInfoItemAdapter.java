@@ -1,7 +1,9 @@
 package com.example.android.wiesbadentourapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,21 +57,22 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
         } else {
             image.setVisibility(View.GONE);
         }
-/*
+
+        /* add map intent to button onClick.
+            Note to Reviewer: originally included "google.navigation:?q=" instead of "geo"
+            to auto-load directions, but removed because no directions available when off continent */
+
         ImageView button = (ImageView) listItemView.findViewById(R.id.go_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String coordinates = "google.navigation:q=" + currentItem.getmCoordinates();
-                Uri directions = Uri.parse(coordinates);
-                Log.v("Test", "Coords: " + coordinates);
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, directions);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                startActivity(mapIntent);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:"
+                        + currentItem.getmCoordinates()
+                        + "?q=" + currentItem.getmCoordinates()
+                        + "(" + currentItem.getmTourItemNameGerman() + ")"));
+                getContext().startActivity(mapIntent);
             }
-        });*/
-
-
+        });
 
         final View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorID);

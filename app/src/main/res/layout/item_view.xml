@@ -5,7 +5,8 @@
     android:id="@+id/object_background"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
 
     <ImageView
         android:id="@+id/image_view"
@@ -97,7 +98,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/go_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
