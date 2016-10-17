@@ -18,8 +18,6 @@ import java.util.ArrayList;
 
 public class SiteFragment extends Fragment {
 
-    String website;
-    Uri url;
     // empty constructor
     public SiteFragment(){
     }
@@ -58,9 +56,7 @@ public class SiteFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TourInfoItem item = items.get(position);
-                String website = item.getmWebsite();
-                Uri url = Uri.parse(website);
-                Intent browser = new Intent(Intent.ACTION_VIEW, url);
+                Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse(item.getmWebsite()));
                 startActivity(browser);
             }
         });

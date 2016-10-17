@@ -46,4 +46,7 @@ OBSTACLES:
 - Matching dynamic image size to resolution: ?
 
 ==================
+??????
+why leave fragment constructors blank 
+what is @nullable
 
