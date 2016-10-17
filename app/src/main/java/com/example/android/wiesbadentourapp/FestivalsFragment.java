@@ -29,14 +29,22 @@ public class FestivalsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
 
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);
         ListView listView = (ListView) rootView.findViewById(R.id.list_view_id);

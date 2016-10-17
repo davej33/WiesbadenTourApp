@@ -28,10 +28,11 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/top_icon"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/german_flag" />
+                 />
 
             <TextView
                 android:id="@+id/german_name_view"
@@ -49,10 +50,11 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/second_icon"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/us_flag" />
+                />
 
             <TextView
                 android:id="@+id/default_name_view"
@@ -69,6 +71,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/third_icon"
                 android:layout_width="18dp"
                 android:layout_height="12dp"
                 android:layout_gravity="center_vertical"
@@ -83,11 +86,13 @@
         </LinearLayout>
 
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/bottom_icon"
                 android:layout_width="18dp"
                 android:layout_height="12dp"
                 android:layout_gravity="center_vertical"

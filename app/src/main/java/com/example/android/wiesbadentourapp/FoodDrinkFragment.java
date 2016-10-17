@@ -29,14 +29,22 @@ public class FoodDrinkFragment extends Fragment {
 
         // create and initialize arraylist
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
-        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location"));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.wine, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.wine, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.wine, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+        items.add(new TourInfoItem("gname","dname","hours","cost", R.drawable.kurhaus, "https://www.espn.com", "location",
+                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
 
         // create adapter and set to list view
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);

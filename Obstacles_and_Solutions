@@ -46,7 +46,13 @@ OBSTACLES:
 - Matching dynamic image size to resolution: ?
 
 ==================
+
+GOAL: update code to allow different icons in listview objects
+OBSTACLES: add arguments and data to object.
+
+
 ??????
 why leave fragment constructors blank 
 what is @nullable
-
+what is bundle / savedInstanceState
+review final, getContext, getActivity

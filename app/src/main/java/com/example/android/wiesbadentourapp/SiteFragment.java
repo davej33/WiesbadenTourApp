@@ -30,21 +30,29 @@ public class SiteFragment extends Fragment {
         // create ArrayList using TourInfoItem objects
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
         items.add(new TourInfoItem("Kurhaus", "Cure House", "T-F 9-5; SA/SU 10-4", "Free", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/conventions/kurhaus/index.php", "50.084722,8.2475"));
+                "https://www.wiesbaden.de/en/tourism/conventions/kurhaus/index.php", "50.084722,8.2475",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
         items.add(new TourInfoItem("Neues Rathaus","Town Hall", "M-F 8-4; SA: 9-12", "Free", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/buildings/Rathaus.php", "50.081797,8.242116"));
+                "https://www.wiesbaden.de/en/tourism/sightseeing/buildings/Rathaus.php", "50.081797,8.242116",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
         items.add(new TourInfoItem("Schloss Biebrich","Biebrich Palace", "TH-SU 10-3", "7", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/briebrich-palace.php", "50.037617,8.234129"));
+                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/briebrich-palace.php", "50.037617,8.234129",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
         items.add(new TourInfoItem("Museum Wiesbaden","Wiesbaden Museum", "T-SU 9-4", "5", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/museum-wiesbaden.php", "50.077735,8.245948"));
+                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/museum-wiesbaden.php", "50.077735,8.245948",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
         items.add(new TourInfoItem("Bonifatiuskirche","St. Boniface Catholic Church", "Daily 8-6", "Free", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/St_Boniface_s_.php", "50.079451,8.239630"));
+                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/St_Boniface_s_.php", "50.079451,8.239630",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
         items.add(new TourInfoItem("Kirche Russische","Russian Orthodox Church", "Daily 10-4", "Free", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/Russian_Church.php", "50.097789,8.234713"));
+                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/Russian_Church.php", "50.097789,8.234713",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
         items.add(new TourInfoItem("Marketplatz","Market Square", "24/7", "Free", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/streets-squares/Marktplatz.php", "50.081326,8.242725"));
+                "https://www.wiesbaden.de/en/tourism/sightseeing/streets-squares/Marktplatz.php", "50.081326,8.242725",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
         items.add(new TourInfoItem("Harlekinäum","Museum of Humour", "M-SA 9-4", "10", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/culture/museum/lachmuseum/index.php", "50.055214,8.305569"));
+                "https://www.wiesbaden.de/en/culture/museum/lachmuseum/index.php", "50.055214,8.305569",
+                R.drawable.german_flag, R.drawable.us_flag, R.drawable.clock, R.drawable.euro));
 
         // create instance of custom adapter and set to listview
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);

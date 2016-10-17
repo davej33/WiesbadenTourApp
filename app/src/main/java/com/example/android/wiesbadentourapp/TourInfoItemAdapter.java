@@ -58,6 +58,32 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
             image.setVisibility(View.GONE);
         }
 
+        // create image views for icons.
+        ImageView topIcon = (ImageView) listItemView.findViewById(R.id.top_icon);
+        ImageView secondIcon = (ImageView) listItemView.findViewById(R.id.second_icon);
+        ImageView thirdIcon = (ImageView) listItemView.findViewById(R.id.third_icon);
+        ImageView bottomIcon = (ImageView) listItemView.findViewById(R.id.bottom_icon);
+        if (currentItem.hasIcons()){
+            topIcon.setImageResource(currentItem.getmTopIcon());
+            topIcon.setVisibility(View.VISIBLE);
+
+            secondIcon.setImageResource(currentItem.getmSecondIcon());
+            secondIcon.setVisibility(View.VISIBLE);
+
+            thirdIcon.setImageResource(currentItem.getmThirdIcon());
+            thirdIcon.setVisibility(View.VISIBLE);
+
+            bottomIcon.setImageResource(currentItem.getmBottomIcon());
+            bottomIcon.setVisibility(View.VISIBLE);
+
+        } else {
+            topIcon.setVisibility(View.GONE);
+            secondIcon.setVisibility(View.GONE);
+            thirdIcon.setVisibility(View.GONE);
+            bottomIcon.setVisibility(View.GONE);
+        }
+
+
         /* add map intent to button onClick.
             Note to Reviewer: originally included "google.navigation:?q=" instead of "geo"
             to auto-load directions, but removed because no directions available when off continent */

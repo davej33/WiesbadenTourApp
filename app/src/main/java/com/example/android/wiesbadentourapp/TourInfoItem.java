@@ -12,10 +12,15 @@ public class TourInfoItem {
     private String mCost;
     private String mWebsite;
     private String mCoordinates;
+    private int mTopIcon = NO_IMAGE_PROVIDED;
+    private int mSecondIcon = NO_IMAGE_PROVIDED;
+    private int mThirdIcon = NO_IMAGE_PROVIDED;
+    private int mBottomIcon = NO_IMAGE_PROVIDED;
     private int mImageResourceID = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image, String website, String coordinates){
+    public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image,
+                         String website, String coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
         mTourItemNameGerman = germanName;
         mTourItemNameDefault = defaultName;
         mHoursOpen = hours;
@@ -23,6 +28,11 @@ public class TourInfoItem {
         mImageResourceID = image;
         mWebsite = website;
         mCoordinates = coordinates;
+        mTopIcon = topIcon;
+        mSecondIcon = secondIcon;
+        mThirdIcon = thirdIcon;
+        mBottomIcon = bottomIcon;
+
     }
 
     // getter methods
@@ -53,6 +63,20 @@ public class TourInfoItem {
     public String getmCoordinates() {
         return mCoordinates;
     }
+
+    public int getmTopIcon() {return mTopIcon;}
+
+    public int getmSecondIcon() {
+        return mSecondIcon;
+    }
+
+    public int getmThirdIcon(){return mThirdIcon;}
+
+    public int getmBottomIcon() {
+        return mBottomIcon;
+    }
+
+    public boolean hasIcons(){ return mTopIcon != NO_IMAGE_PROVIDED; }
 
     public boolean hasImage() {
         return mImageResourceID != NO_IMAGE_PROVIDED;
