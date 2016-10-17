@@ -1,0 +1,49 @@
+
+
+GOAL: Add a map intent to a button located inside in listview
+OBSTACLES:
+- prevent the button from being included in onItemClick for the rest of the item view
+	- SOLUTION: add android:descendantFocusability="blocksDescendants" to item_view layout 
+	
+- add onClickListener to the button
+	- SOLUTION: In custom adapter, create ImageView object for the button and set onClickListener
+	 
+- cannot resolve startActivity in onClickListener
+	- SOLUTION: add getContext() method in front of startActivity method.
+	
+- create map intent to show directions from current location to destination
+	- SOLUTION: 
+		- parse "google.navigation:q=" + current item coordinates getter method to set destination in Google maps
+
+SOLUTION:
+ImageView button = (ImageView) listItemView.findViewById(R.id.go_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("google.navigation:q=" + currentItem.getmCoordinates()));
+                getContext().startActivity(mapIntent);
+            }
+        });
+
+==================
+
+GOAL: Set starting point coords to German location
+ - No Solution found
+ 
+==================
+
+GOAL: Set map intent to show a marker 
+SOLUTION: Add "?q=" + coordinates to Uri.parse
+- Intent map = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:" + coordinates + "?q=" + coordinates))
+ADD-ON: Include label name on map intent by adding "+ '(' + location_name + ')'" to Uri.parse()
+- Intent map = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:" + coordinates + "?q=" + coordinates + "(" + label + ")"))
+
+==================
+
+GOAL: Add images for hdpi, mdpi, xhdpi, xxhdpi, xxxhdpi
+OBSTACLES:
+- Same naming convention. SOLUTION: Add drawable resource directory for each dimension
+- Matching dynamic image size to resolution: ?
+
+==================
+
