@@ -10,10 +10,9 @@ public class TourInfoItem {
     private String mTourItemNameDefault;
     private String mHoursOpen;
     private String mCost;
-    private int mImageResourceID;
     private String mWebsite;
     private String mCoordinates;
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private int mImageResourceID = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
     public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image, String website, String coordinates){
@@ -56,6 +55,6 @@ public class TourInfoItem {
     }
 
     public boolean hasImage() {
-        return mImageResourceId != NO_IMAGE_PROVIDED;
+        return mImageResourceID != NO_IMAGE_PROVIDED;
     }
 }

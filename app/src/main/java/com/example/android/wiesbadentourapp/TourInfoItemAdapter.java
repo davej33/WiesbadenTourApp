@@ -47,16 +47,29 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
         TextView cost = (TextView) listItemView.findViewById(R.id.cost_view);
         cost.setText(currentItem.getmCost());
 
-
         ImageView image = (ImageView) listItemView.findViewById(R.id.image_view);
-        image.setImageResource(currentItem.getmImageResourceID());
-        /*
+
         if (currentItem.hasImage()){
             image.setImageResource(currentItem.getmImageResourceID());
             image.setVisibility(View.VISIBLE);
         } else {
             image.setVisibility(View.GONE);
-        }*/
+        }
+/*
+        ImageView button = (ImageView) listItemView.findViewById(R.id.go_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String coordinates = "google.navigation:q=" + currentItem.getmCoordinates();
+                Uri directions = Uri.parse(coordinates);
+                Log.v("Test", "Coords: " + coordinates);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, directions);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });*/
+
+
 
         final View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorID);
