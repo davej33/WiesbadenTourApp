@@ -22,7 +22,7 @@
         </activity>
         <activity android:name=".SiteActivity" />
         <activity android:name=".FoodDrinkActivity" />
-        <activity android:name=".FestivalsActivity" />
+        <activity android:name=".EventsActivity" />
         <activity android:name=".PhrasesActivity"/>
     </application>
 

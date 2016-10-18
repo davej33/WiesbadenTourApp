@@ -1,4 +1,14 @@
+GOAL: Properly size in-app icons.
+SOLUTION:
+xxxhdpi: 192
+xxhdpi: 144
+xhdpi: 96
+hdpi: 72
+mdpi: 48
 
+=================
+
+################# 10/17 ##################
 
 GOAL: Add a map intent to a button located inside in listview
 OBSTACLES:

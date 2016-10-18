@@ -34,7 +34,7 @@ public class ItemFragmentPagerAdapter extends FragmentPagerAdapter {
         } else if (position == 1) {
             return new FoodDrinkFragment();
         } else if (position == 2) {
-            return new FestivalsFragment();
+            return new EventsFragment();
         } else {
             return new PhrasesFragment();
         }

@@ -5,8 +5,8 @@
     android:id="@+id/object_background"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:orientation="vertical"
-    android:descendantFocusability="blocksDescendants">
+    android:descendantFocusability="blocksDescendants"
+    >
 
     <ImageView
         android:id="@+id/image_view"
@@ -20,7 +20,7 @@
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/image_view"
         android:orientation="vertical"
-        android:paddingLeft="8dp">
+        android:paddingLeft="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,10 +29,9 @@
 
             <ImageView
                 android:id="@+id/top_icon"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center_vertical"
-                 />
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical" />
 
             <TextView
                 android:id="@+id/german_name_view"
@@ -51,10 +50,9 @@
 
             <ImageView
                 android:id="@+id/second_icon"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center_vertical"
-                />
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical" />
 
             <TextView
                 android:id="@+id/default_name_view"
@@ -72,10 +70,9 @@
 
             <ImageView
                 android:id="@+id/third_icon"
-                android:layout_width="18dp"
+                android:layout_width="15dp"
                 android:layout_height="12dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/clock" />
+                android:layout_gravity="center_vertical" />
 
             <TextView
                 android:id="@+id/hours_view"
@@ -93,10 +90,9 @@
 
             <ImageView
                 android:id="@+id/bottom_icon"
-                android:layout_width="18dp"
+                android:layout_width="15dp"
                 android:layout_height="12dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/euro" />
+                android:layout_gravity="center_vertical" />
 
             <TextView
                 android:id="@+id/cost_view"
@@ -109,10 +105,10 @@
 
     <ImageButton
         android:id="@+id/go_button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/lets_go"
-        />
+        android:src="@mipmap/lets_go" />
 </RelativeLayout>

@@ -31,28 +31,28 @@ public class FoodDrinkFragment extends Fragment {
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
         items.add(new TourInfoItem("Ente","French","Daily 2-Midnight","Expensive", R.drawable.ente,
                 "http://www.nassauer-hof.de/en/restaurant-ente", "50.084800,8.243511",
-                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.knife_fork, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
         items.add(new TourInfoItem("das!Burger","American","Daily 11-10","Mid-range", R.drawable.dasburger,
                 "http://www.das-burger.com/en/", "50.083010,8.240282",
-                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.knife_fork, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
         items.add(new TourInfoItem("Weinguthoehn","Local","W-SU 4-11","Mid-range", R.drawable.weinguthoehn,
                 "http://weinguthoehn.de/de/gutsschaenke.html", "50.063103,8.185101",
-                R.drawable.wine, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.wine, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
         items.add(new TourInfoItem("Curry Manufaktur","German","T-SU 11-9","Cheap", R.drawable.curry,
                 "https://www.facebook.com/Curry-Manufaktur-148251825217109/", "50.084188,8.239668",
-                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.knife_fork, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
         items.add(new TourInfoItem("Weingut Herborn","Local","Th-M 230-9","Higher-end", R.drawable.herborn,
                 "http://www.weingut-herborn.de", "50.057453,8.161098",
-                R.drawable.wine, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.wine, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
         items.add(new TourInfoItem("Cafe Maldaner","European Desserts","Daily 830-7","Mid-range", R.drawable.maldaner,
                 "http://maldaner1859.de", "50.082516,8.239241",
-                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.knife_fork, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
         items.add(new TourInfoItem("Weingut Josef Becker","Local","W-SU 4-9","Mid-range", R.drawable.becker_winery,
                 "http://www.jbbecker.de", "50.033338,8.160040",
-                R.drawable.wine, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.wine, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
         items.add(new TourInfoItem("Pub Scotch 'n' Soda","Scottish Pub","Daily 10-Midnight","Cheap", R.drawable.scotch,
                 "http://www.scotchnsoda.de", "50.083996,8.240865",
-                R.drawable.knife_fork, R.drawable.globe, R.drawable.clock, R.drawable.euro));
+                R.mipmap.knife_fork, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
 
         // create adapter and set to list view
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);
