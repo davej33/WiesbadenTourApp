@@ -62,7 +62,7 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
         ImageView topIcon = (ImageView) listItemView.findViewById(R.id.top_icon);
         ImageView secondIcon = (ImageView) listItemView.findViewById(R.id.second_icon);
         ImageView thirdIcon = (ImageView) listItemView.findViewById(R.id.third_icon);
-        ImageView bottomIcon = (ImageView) listItemView.findViewById(R.id.bottom_icon);
+        ImageView bottomIcon = (ImageView) listItemView.    findViewById(R.id.bottom_icon);
         if (currentItem.hasIcons()){
             topIcon.setImageResource(currentItem.getmTopIcon());
             topIcon.setVisibility(View.VISIBLE);
@@ -82,7 +82,6 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
             thirdIcon.setVisibility(View.GONE);
             bottomIcon.setVisibility(View.GONE);
         }
-
 
         /* add map intent to button onClick.
             Note to Reviewer: originally included "google.navigation:?q=" instead of "geo"
