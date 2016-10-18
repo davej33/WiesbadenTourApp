@@ -5,8 +5,7 @@
     android:id="@+id/object_background"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:descendantFocusability="blocksDescendants"
-    >
+    android:descendantFocusability="blocksDescendants">
 
     <ImageView
         android:id="@+id/image_view"
@@ -107,8 +106,8 @@
         android:id="@+id/go_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginRight="16dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
         android:src="@mipmap/lets_go" />
 </RelativeLayout>

@@ -13,7 +13,7 @@ public class ItemFragmentPagerAdapter extends FragmentPagerAdapter {
 
 
     final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[]{"Sites", "Food & Drink", "Festivals", "Phrases"};
+    private String tabTitles[] = new String[]{"Sites", "Food & Drink", "Events", "Phrases"};
     private Context context;
 
     public ItemFragmentPagerAdapter(FragmentManager fm, Context context) {

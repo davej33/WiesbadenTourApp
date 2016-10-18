@@ -19,6 +19,7 @@ public class TourInfoItem {
     private int mImageResourceID = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    // constructor with image
     public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image,
                          String website, String coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
         mTourItemNameGerman = germanName;
@@ -32,8 +33,24 @@ public class TourInfoItem {
         mSecondIcon = secondIcon;
         mThirdIcon = thirdIcon;
         mBottomIcon = bottomIcon;
+    }
+
+    // constructor without image
+    public TourInfoItem (String germanName, String defaultName, String hours, String cost, String website,
+                         String coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
+        mTourItemNameGerman = germanName;
+        mTourItemNameDefault = defaultName;
+        mHoursOpen = hours;
+        mCost = cost;
+        mWebsite = website;
+        mCoordinates = coordinates;
+        mTopIcon = topIcon;
+        mSecondIcon = secondIcon;
+        mThirdIcon = thirdIcon;
+        mBottomIcon = bottomIcon;
 
     }
+
 
     // getter methods
     public String getmTourItemNameGerman() {
