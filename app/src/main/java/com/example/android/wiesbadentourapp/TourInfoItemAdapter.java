@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -44,10 +46,20 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
         germanName.setTypeface(null, Typeface.BOLD);
 
         TextView hours = (TextView) listItemView.findViewById(R.id.hours_view);
-        hours.setText(currentItem.getmHoursOpen());
-
         TextView cost = (TextView) listItemView.findViewById(R.id.cost_view);
-        cost.setText(currentItem.getmCost());
+
+
+        // hide views if textview not provided
+        if(currentItem.hasText()){
+            hours.setText(currentItem.getmHoursOpen());
+            hours.setVisibility(View.VISIBLE);
+
+            cost.setText(currentItem.getmCost());
+            cost.setVisibility(View.VISIBLE);
+        } else {
+            hours.setVisibility(View.GONE);
+            cost.setVisibility(View.GONE);
+        }
 
         ImageView image = (ImageView) listItemView.findViewById(R.id.image_view);
 
@@ -58,18 +70,21 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
             image.setVisibility(View.GONE);
         }
 
-        // create image views for icons.
+        // create image views for icons, go button and
         ImageView topIcon = (ImageView) listItemView.findViewById(R.id.top_icon);
+        topIcon.setImageResource(currentItem.getmTopIcon());
+        topIcon.setVisibility(View.VISIBLE);
+
         ImageView secondIcon = (ImageView) listItemView.findViewById(R.id.second_icon);
+        secondIcon.setImageResource(currentItem.getmSecondIcon());
+        secondIcon.setVisibility(View.VISIBLE);
+
         ImageView thirdIcon = (ImageView) listItemView.findViewById(R.id.third_icon);
-        ImageView bottomIcon = (ImageView) listItemView.    findViewById(R.id.bottom_icon);
+        ImageView bottomIcon = (ImageView) listItemView.findViewById(R.id.bottom_icon);
+        ImageButton goButton = (ImageButton) listItemView.findViewById(R.id.go_button);
+        RelativeLayout itemLayout = (RelativeLayout) listItemView.findViewById(R.id.object_background);
+
         if (currentItem.hasIcons()){
-            topIcon.setImageResource(currentItem.getmTopIcon());
-            topIcon.setVisibility(View.VISIBLE);
-
-            secondIcon.setImageResource(currentItem.getmSecondIcon());
-            secondIcon.setVisibility(View.VISIBLE);
-
             thirdIcon.setImageResource(currentItem.getmThirdIcon());
             thirdIcon.setVisibility(View.VISIBLE);
 
@@ -77,18 +92,20 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
             bottomIcon.setVisibility(View.VISIBLE);
 
         } else {
-            topIcon.setVisibility(View.GONE);
-            secondIcon.setVisibility(View.GONE);
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
+                    RelativeLayout.LayoutParams.WRAP_CONTENT);
+            itemLayout.setLayoutParams(params);
             thirdIcon.setVisibility(View.GONE);
             bottomIcon.setVisibility(View.GONE);
+            goButton.setVisibility(View.GONE);
         }
 
         /* add map intent to button onClick.
             Note to Reviewer: originally included "google.navigation:?q=" instead of "geo"
             to auto-load directions, but removed because no directions available when off continent */
 
-        ImageView button = (ImageView) listItemView.findViewById(R.id.go_button);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        goButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:"

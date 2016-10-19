@@ -16,12 +16,13 @@
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
         android:layout_toRightOf="@+id/image_view"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
         <LinearLayout
+            android:id="@+id/first_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -35,7 +36,7 @@
             <TextView
                 android:id="@+id/german_name_view"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="4dp"
                 android:textStyle="bold"
@@ -43,6 +44,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/second_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -56,13 +58,14 @@
             <TextView
                 android:id="@+id/default_name_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingLeft="4dp"
                 android:textStyle="italic"
                 tools:text="Default Site Name" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/third_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -76,13 +79,13 @@
             <TextView
                 android:id="@+id/hours_view"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingLeft="4dp"
                 tools:text="Site Detail 1" />
         </LinearLayout>
 
         <LinearLayout
-
+            android:id="@+id/fourth_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -96,7 +99,7 @@
             <TextView
                 android:id="@+id/cost_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingLeft="4dp"
                 tools:text="Site Detail 2" />
         </LinearLayout>

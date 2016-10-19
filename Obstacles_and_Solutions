@@ -1,3 +1,36 @@
+
+GOAL: Change  List view item height programmatically 
+SOLUTION: 
+RelativeLayout itemLayout = (RelativeLayout) listItemView.findViewById(R.id.object_background);
+RelativeLayout.LayoutParams layout_description = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
+                    RelativeLayout.LayoutParams.WRAP_CONTENT);
+itemLayout.setLayoutParams(layout_description);
+===============
+
+GOAL: Add audio phrases to the app
+STEPS:
+1. Create new constructor and hide unused views
+2. Add ArrayList and set Adapter
+3. Set OnItemClickListener
+4. Create: MediaPlayer, AudioManager, AudioManager.onAudioFocusChangeListener, OnCompletion Callback
+5. Code onAudioFocusChangeListener to handle requests from the OS.
+6. Add onStop override method
+7. Create releaseMediaPlayer method, add to onCompletion
+8. Instantiate mAudioManager in onCreateView: 
+	mAudioManager = (AudioManager) getActivity().getSupportService(Context.AUDIO_SERVICE)
+9. When item clicked, request AudioFocus from mAudioManager. 
+	- requestAudioFocus arguments: changeListener, Type, Duration
+	- Returns a CONSTANT with integer value
+	int requestFocus = mAudioManager.requestAudioFocus(changeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT) 
+
+10. Create If-then statement to handle requestAudioFocus return value
+	if (requestFocus == AudioManager.AUDIOFOCUS_REQUEST_GRANTED){
+		mMediaPlayer = MediaPlayer.create(getActivity(), item.getAudio());
+		mMediaPlayer.start()
+		mMediaPlayer.setOnCompletionListener(mCompletionListener)
+		
+================
+
 GOAL: Properly size in-app icons.
 SOLUTION:
 xxxhdpi: 192

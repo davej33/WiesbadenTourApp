@@ -18,6 +18,7 @@ public class TourInfoItem {
     private int mBottomIcon = NO_IMAGE_PROVIDED;
     private int mImageResourceID = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
+    private int mAudioClip;
 
     // constructor with image
     public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image,
@@ -49,6 +50,15 @@ public class TourInfoItem {
         mThirdIcon = thirdIcon;
         mBottomIcon = bottomIcon;
 
+    }
+
+    // constructor without image
+    public TourInfoItem (String germanName, String defaultName, int audioClip, int topIcon, int secondIcon){
+        mTourItemNameGerman = germanName;
+        mTourItemNameDefault = defaultName;
+        mAudioClip = audioClip;
+        mTopIcon = topIcon;
+        mSecondIcon = secondIcon;
     }
 
 
@@ -93,9 +103,13 @@ public class TourInfoItem {
         return mBottomIcon;
     }
 
-    public boolean hasIcons(){ return mTopIcon != NO_IMAGE_PROVIDED; }
+    public boolean hasIcons(){ return mThirdIcon != NO_IMAGE_PROVIDED; }
+
+    public boolean hasText(){ return mHoursOpen != null;}
 
     public boolean hasImage() {
         return mImageResourceID != NO_IMAGE_PROVIDED;
     }
+
+    public int getmAudioClip(){ return mAudioClip; }
 }
