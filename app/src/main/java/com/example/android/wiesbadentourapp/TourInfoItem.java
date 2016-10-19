@@ -6,6 +6,7 @@ package com.example.android.wiesbadentourapp;
 
 public class TourInfoItem {
 
+    // variables
     private String mTourItemNameGerman;
     private String mTourItemNameDefault;
     private String mHoursOpen;
@@ -20,7 +21,7 @@ public class TourInfoItem {
     private static final int NO_IMAGE_PROVIDED = -1;
     private int mAudioClip;
 
-    // constructor with image
+    // constructor with image for sites and food/drink
     public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image,
                          String website, String coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
         mTourItemNameGerman = germanName;
@@ -36,7 +37,7 @@ public class TourInfoItem {
         mBottomIcon = bottomIcon;
     }
 
-    // constructor without image
+    // constructor without image for events fragment
     public TourInfoItem (String germanName, String defaultName, String hours, String cost, String website,
                          String coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
         mTourItemNameGerman = germanName;
@@ -52,7 +53,7 @@ public class TourInfoItem {
 
     }
 
-    // constructor without image
+    // constructor for phrases fragment
     public TourInfoItem (String germanName, String defaultName, int audioClip, int topIcon, int secondIcon){
         mTourItemNameGerman = germanName;
         mTourItemNameDefault = defaultName;

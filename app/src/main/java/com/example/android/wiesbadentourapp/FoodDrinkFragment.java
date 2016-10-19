@@ -27,7 +27,7 @@ public class FoodDrinkFragment extends Fragment {
         // create view
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        // create and initialize arraylist
+        // create and initialize array list
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
         items.add(new TourInfoItem("Ente","French","Daily 2-Midnight","Expensive", R.drawable.ente,
                 "http://www.nassauer-hof.de/en/restaurant-ente", "50.084800,8.243511",
@@ -54,11 +54,12 @@ public class FoodDrinkFragment extends Fragment {
                 "http://www.scotchnsoda.de", "50.083996,8.240865",
                 R.mipmap.knife_fork, R.mipmap.globe, R.mipmap.clock, R.mipmap.euro));
 
-        // create adapter and set to list view
+        // create adapter
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);
         final ListView listView = (ListView) rootView.findViewById(R.id.list_view_id);
         listView.setAdapter(adapter);
 
+        // create and set item onclick listener to list view
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

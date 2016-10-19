@@ -11,21 +11,24 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class ItemFragmentPagerAdapter extends FragmentPagerAdapter {
 
-
+    // create and initialize variables
     final int PAGE_COUNT = 4;
     private String tabTitles[] = new String[]{"Sites", "Food & Drink", "Events", "Phrases"};
     private Context context;
 
+    // constructor
     public ItemFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
     }
 
+    // tracks fragment navigation
     @Override
     public int getCount() {
         return PAGE_COUNT;
     }
 
+    // sets id value to each fragment
     @Override
     public Fragment getItem(int position) {
 
@@ -39,7 +42,6 @@ public class ItemFragmentPagerAdapter extends FragmentPagerAdapter {
             return new PhrasesFragment();
         }
     }
-
 
     @Override
     public CharSequence getPageTitle(int position) {

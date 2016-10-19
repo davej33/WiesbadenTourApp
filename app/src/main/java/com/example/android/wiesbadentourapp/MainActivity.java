@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // create view pager
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new ItemFragmentPagerAdapter(getSupportFragmentManager(),
                 MainActivity.this));
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        Toast.makeText(MainActivity.this, "Press location for more info!", Toast.LENGTH_LONG).show();
+        // toast with info
+        Toast.makeText(MainActivity.this, "Press location for more info!", Toast.LENGTH_SHORT).show();
     }
 }

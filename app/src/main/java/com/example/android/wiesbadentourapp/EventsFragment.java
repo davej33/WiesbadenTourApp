@@ -28,6 +28,7 @@ public class EventsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
+        // create and initialize array list
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
         items.add(new TourInfoItem("Easter Market","MAR 10-12 2017","9-Midnight","Free",
                 "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-eastermarket.php", "50.081326,8.242725",
@@ -50,14 +51,16 @@ public class EventsFragment extends Fragment {
         items.add(new TourInfoItem("Oktoberfest","SEP 29 - OCT 10 2017","4-Midnight","Free - 30",
                 "http://wiesbaden-oktoberfest.de", "50.081326,8.242725",
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Fasching (Carnival)","FEB 3 - MAR 1","24/7","Free",
+        items.add(new TourInfoItem("Fasching (Carnival)","FEB 3 - MAR 1 2017","24/7","Free",
                 "https://www.wiesbaden.de/en/living-in-wiesbaden/festivities-markets/festivities/carnival.php", "50.081326,8.242725",
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
 
+        // create adapter
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);
         ListView listView = (ListView) rootView.findViewById(R.id.list_view_id);
         listView.setAdapter(adapter);
 
+        // create and set item onclick listener to list view
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
