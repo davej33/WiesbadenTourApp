@@ -5,8 +5,7 @@
     android:id="@+id/object_background"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:orientation="vertical"
-    android:descendantFocusability="blocksDescendants">
+    >
 
     <ImageView
         android:id="@+id/image_view"
@@ -17,97 +16,102 @@
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
         android:layout_toRightOf="@+id/image_view"
         android:orientation="vertical"
-        android:paddingLeft="8dp">
+        android:paddingLeft="16dp">
 
         <LinearLayout
+            android:id="@+id/first_linear_layout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/german_flag" />
+                android:id="@+id/top_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"/>
 
             <TextView
                 android:id="@+id/german_name_view"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent"
                 android:paddingLeft="4dp"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 tools:text="German Site Name" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/second_linear_layout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
+                android:id="@+id/second_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/us_flag" />
+                />
 
             <TextView
                 android:id="@+id/default_name_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingLeft="4dp"
+                android:textSize="14sp"
                 android:textStyle="italic"
                 tools:text="Default Site Name" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/third_linear_layout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="18dp"
-                android:layout_height="12dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/clock" />
+                android:id="@+id/third_icon"
+                android:layout_width="15dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical" />
 
             <TextView
                 android:id="@+id/hours_view"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingLeft="4dp"
+                android:textSize="14sp"
                 tools:text="Site Detail 1" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/fourth_linear_layout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="18dp"
-                android:layout_height="12dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/euro" />
+                android:id="@+id/bottom_icon"
+                android:layout_width="15dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical" />
 
             <TextView
                 android:id="@+id/cost_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingLeft="4dp"
+                android:textSize="14sp"
                 tools:text="Site Detail 2" />
         </LinearLayout>
     </LinearLayout>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/go_button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:background="@color/primaryLight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/lets_go"
-        />
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/lets_go" />
 </RelativeLayout>
