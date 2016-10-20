@@ -55,26 +55,27 @@ public class PhrasesFragment extends Fragment {
 
         // create and initialize array list
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
-        items.add(new TourInfoItem("My name is Miller.","Mein Name ist Müller.",
+        items.add(new TourInfoItem(R.string.phrases_1_e_name, R.string.phrases_1_g_name,
                 R.raw.name, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("How are you?","Wie geht's?",
+        items.add(new TourInfoItem(R.string.phrases_2_e_name, R.string.phrases_2_g_name,
                 R.raw.how_are_you, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("Excuse me.","Entschuldigen Sie",
+        items.add(new TourInfoItem(R.string.phrases_3_e_name, R.string.phrases_3_g_name,
                 R.raw.excuse_me, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("Where is the markt","Wo ist der Markt?",
+        items.add(new TourInfoItem(R.string.phrases_4_e_name, R.string.phrases_4_g_name,
                 R.raw.market, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("I would like to go to the city center.","Ich möchte ins Stadtzentrum.",
+        items.add(new TourInfoItem(R.string.phrases_5_e_name, R.string.phrases_5_g_name,
                 R.raw.city_center, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("I would like to go to the train station.","Ich möchte zum Bahnhof.",
+        items.add(new TourInfoItem(R.string.phrases_6_e_name, R.string.phrases_6_g_name,
                 R.raw.train_station, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("How much is the entrance fee?","Wie viel kostet der Eintritt?",
+        items.add(new TourInfoItem(R.string.phrases_7_e_name, R.string.phrases_7_g_name,
                 R.raw.entrance_fee, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("Do you have a vacant room?","Haben Sie ein Zimmer frei?",
+        items.add(new TourInfoItem(R.string.phrases_8_e_name, R.string.phrases_8_g_name,
                 R.raw.vacancy, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("What time do you serve breakfast?","Um wie viel Uhr gibt es Frühstück?",
+        items.add(new TourInfoItem(R.string.phrases_9_e_name, R.string.phrases_9_g_name,
                 R.raw.breakfast, R.mipmap.us_flag, R.mipmap.german_flag));
-        items.add(new TourInfoItem("Bye!","Tschüs!",
+        items.add(new TourInfoItem(R.string.phrases_10_e_name, R.string.phrases_10_g_name,
                 R.raw.bye, R.mipmap.us_flag, R.mipmap.german_flag));
+
 
         // create adapter and set to list view
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);

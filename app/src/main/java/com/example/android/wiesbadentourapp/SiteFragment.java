@@ -29,29 +29,29 @@ public class SiteFragment extends Fragment {
 
         // create ArrayList using TourInfoItem objects
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
-        items.add(new TourInfoItem("Kurhaus", "Cure House", "T-F 9-5; SA/SU 10-4", "Free", R.drawable.kurhaus,
-                "https://www.wiesbaden.de/en/tourism/conventions/kurhaus/index.php", "50.084722,8.2475",
+        items.add(new TourInfoItem(R.string.site_1_g_name, R.string.site_1_e_name, R.string.site_1_hours, R.string.free, R.drawable.kurhaus,
+                "https://www.wiesbaden.de/en/tourism/conventions/kurhaus/index.php", R.string.site_1_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Neues Rathaus","Town Hall", "M-F 8-4; SA 9-12", "Free", R.drawable.rathaus,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/buildings/Rathaus.php", "50.081797,8.242116",
+        items.add(new TourInfoItem(R.string.site_2_g_name, R.string.site_2_e_name, R.string.site_2_hours, R.string.free, R.drawable.rathaus,
+                "https://www.wiesbaden.de/en/tourism/sightseeing/buildings/Rathaus.php", R.string.site_2_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Schloss Biebrich","Biebrich Palace", "TH-SU 10-3", "7", R.drawable.biebrich_palace,
-                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/briebrich-palace.php", "50.037617,8.234129",
+        items.add(new TourInfoItem(R.string.site_3_g_name, R.string.site_3_e_name, R.string.site_3_hours, R.string.site_3_cost, R.drawable.biebrich_palace,
+                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/briebrich-palace.php", R.string.site_3_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Museum Wiesbaden","Wiesbaden Museum", "T-SU 9-4", "5", R.drawable.museum,
-                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/museum-wiesbaden.php", "50.077735,8.245948",
+        items.add(new TourInfoItem(R.string.site_4_g_name, R.string.site_4_e_name, R.string.site_4_hours, R.string.site_4_cost, R.drawable.museum,
+                "https://www.wiesbaden.de/en/tourism/conventions/event-venues/museum-wiesbaden.php", R.string.site_4_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Bonifatiuskirche","St. Boniface Catholic Church", "Daily 8-6", "Free", R.drawable.boniface,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/St_Boniface_s_.php", "50.079451,8.239630",
+        items.add(new TourInfoItem(R.string.site_5_g_name, R.string.site_5_e_name, R.string.site_5_hours, R.string.free, R.drawable.boniface,
+                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/St_Boniface_s_.php", R.string.site_5_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Kirche Russische","Russian Orthodox Church", "Daily 10-4", "Free", R.drawable.russian_church,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/Russian_Church.php", "50.097789,8.234713",
+        items.add(new TourInfoItem(R.string.site_6_g_name, R.string.site_6_e_name, R.string.site_6_hours, R.string.free, R.drawable.russian_church,
+                "https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/Russian_Church.php", R.string.site_6_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Marketplatz","Market Square", "24/7", "Free", R.drawable.market,
-                "https://www.wiesbaden.de/en/tourism/sightseeing/streets-squares/Marktplatz.php", "50.081326,8.242725",
+        items.add(new TourInfoItem(R.string.site_7_g_name, R.string.site_7_e_name, R.string.site_7_hours, R.string.free, R.drawable.market,
+                "https://www.wiesbaden.de/en/tourism/sightseeing/streets-squares/Marktplatz.php", R.string.site_7_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Harlekinäum","Museum of Humour", "M-SA 9-4", "10", R.drawable.humor,
-                "https://www.wiesbaden.de/en/culture/museum/lachmuseum/index.php", "50.055214,8.305569",
+        items.add(new TourInfoItem(R.string.site_8_g_name, R.string.site_8_e_name, R.string.site_8_hours, R.string.free, R.drawable.humor,
+                "https://www.wiesbaden.de/en/culture/museum/lachmuseum/index.php", R.string.site_8_coordinates,
                 R.mipmap.german_flag, R.mipmap.us_flag, R.mipmap.clock, R.mipmap.euro));
 
         // create instance of custom adapter and set to listview

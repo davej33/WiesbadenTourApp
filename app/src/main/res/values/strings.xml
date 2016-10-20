@@ -1,3 +1,188 @@
 <resources>
     <string name="app_name">Wiesbaden Tour App</string>
+
+    <!-- sites -->
+    <string name="site_1_g_name">Kurhaus</string>
+    <string name="site_1_e_name">Cure House</string>
+    <string name="site_1_hours">T-F 9 to 5; SA/SU 10 to 4</string>
+    <string name="free">Free</string>
+    <string name="site_1_website">https://www.wiesbaden.de/en/tourism/conventions/kurhaus/index.php</string>
+    <string name="site_1_coordinates">50.084722,8.2475</string>
+
+    <string name="site_2_g_name">Neues Rathaus</string>
+    <string name="site_2_e_name">Town Hall</string>
+    <string name="site_2_hours">M-F 8 to 4; SA 9 to 12</string>
+    <string name="site_2_website">https://www.wiesbaden.de/en/tourism/sightseeing/buildings/Rathaus.php</string>
+    <string name="site_2_coordinates">50.081797,8.242116</string>
+
+    <string name="site_3_g_name">Schloss Biebrich</string>
+    <string name="site_3_e_name">Biebrich Palace</string>
+    <string name="site_3_hours">TH-SU 10 to 3</string>
+    <string name="site_3_cost">7</string>
+    <string name="site_3_website">https://www.wiesbaden.de/en/tourism/conventions/event-venues/briebrich-palace.php</string>
+    <string name="site_3_coordinates">50.037617,8.234129</string>
+
+    <string name="site_4_g_name">Museum Wiesbaden</string>
+    <string name="site_4_e_name">Wiesbaden Museum</string>
+    <string name="site_4_hours">T-SU 9 to 4</string>
+    <string name="site_4_cost">5</string>
+    <string name="site_4_website">https://www.wiesbaden.de/en/tourism/conventions/event-venues/museum-wiesbaden.php</string>
+    <string name="site_4_coordinates">50.077735,8.245948</string>
+
+    <string name="site_5_g_name">Bonifatiuskirche</string>
+    <string name="site_5_e_name">St. Boniface Catholic Church</string>
+    <string name="site_5_hours">Daily 8 to 6</string>
+    <string name="site_5_cost">Free</string>
+    <string name="site_5_website">https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/St_Boniface_s_.php</string>
+    <string name="site_5_coordinates">50.079451,8.239630</string>
+
+    <string name="site_6_g_name">Kirche Russische</string>
+    <string name="site_6_e_name">Russian Orthodox Church</string>
+    <string name="site_6_hours">Daily 10 to 4</string>
+    <string name="site_6_cost">Free</string>
+    <string name="site_6_website">https://www.wiesbaden.de/en/tourism/sightseeing/churches-synagogue/Russian_Church.php</string>
+    <string name="site_6_coordinates">50.097789,8.234713</string>
+
+    <string name="site_7_g_name">Marketplatz</string>
+    <string name="site_7_e_name">Market Square</string>
+    <string name="site_7_hours">24/7</string>
+    <string name="site_7_cost">Free</string>
+    <string name="site_7_website">https://www.wiesbaden.de/en/tourism/sightseeing/streets-squares/Marktplatz.php</string>
+    <string name="site_7_coordinates">50.081326,8.242725</string>
+
+    <string name="site_8_g_name">Harlekinäum</string>
+    <string name="site_8_e_name">Museum of Humor</string>
+    <string name="site_8_hours">M-SA 9 to 4</string>
+    <string name="site_8_cost">10</string>
+    <string name="site_8_website">https://www.wiesbaden.de/en/culture/museum/lachmuseum/index.php</string>
+    <string name="site_8_coordinates">50.055214,8.305569</string>
+
+    <!-- food -->
+    <string name="food_1_g_name">Ente</string>
+    <string name="food_1_e_name">French</string>
+    <string name="food_1_hours">T-F 9 to 5; SA/SU 10 to 4</string>
+    <string name="food_1_cost">Expensive</string>
+    <string name="food_1_coordinates">50.084800,8.243511</string>
+
+    <string name="food_2_g_name">das!Burger</string>
+    <string name="food_2_e_name">American</string>
+    <string name="food_2_hours">M-F 8 to 4; SA 9 to 12</string>
+    <string name="food_2_cost">Mid-range</string>
+    <string name="food_2_coordinates">50.083010,8.240282</string>
+
+    <string name="food_3_g_name">Weinguthoehn</string>
+    <string name="food_3_e_name">Local</string>
+    <string name="food_3_hours">TH-SU 10 to 3</string>
+    <string name="food_3_cost">Mid-range</string>
+    <string name="food_3_coordinates">50.063103,8.185101</string>
+
+    <string name="food_4_g_name">Curry Manufaktur</string>
+    <string name="food_4_e_name">German</string>
+    <string name="food_4_hours">T-SU 9 to 4</string>
+    <string name="food_4_cost">Cheap</string>
+    <string name="food_4_coordinates">50.057453,8.161098</string>
+
+    <string name="food_5_g_name">Weingut Herborn</string>
+    <string name="food_5_e_name">Local</string>
+    <string name="food_5_hours">Daily 8 to 6</string>
+    <string name="food_5_cost">Higher-end</string>
+    <string name="food_5_coordinates">50.057453,8.161098</string>
+
+    <string name="food_6_g_name">Cafe Maldaner</string>
+    <string name="food_6_e_name">European Desserts</string>
+    <string name="food_6_hours">Daily 10 to 4</string>
+    <string name="food_6_cost">Mid-range</string>
+    <string name="food_6_coordinates">50.082516,8.239241</string>
+
+    <string name="food_7_g_name">Weingut Josef Becker</string>
+    <string name="food_7_e_name">Local</string>
+    <string name="food_7_hours">T-SU 9 to 4</string>
+    <string name="food_7_cost">Higher-end</string>
+    <string name="food_7_coordinates">50.033338,8.160040</string>
+
+    <string name="food_8_g_name">Pub Scotch \'n\' Soda</string>
+    <string name="food_8_e_name">Scottish Pub</string>
+    <string name="food_8_hours">M-SU 9am-Midnight</string>
+    <string name="food_8_cost">Cheap</string>
+    <string name="food_8_coordinates">50.083996,8.240865</string>
+
+    <!-- events -->
+    <string name="events_1_g_name">Easter Market</string>
+    <string name="events_1_e_name">MAR 10 to 12 2017</string>
+    <string name="events_1_hours">9am-Midnight</string>
+    <string name="events_1_cost">Free</string>
+    <string name="events_1_coordinates">50.081326,8.242725</string>
+
+    <string name="events_2_g_name">City Festival</string>
+    <string name="events_2_e_name">SEP 21 to 23 2017</string>
+    <string name="events_2_hours">8am-Midnight</string>
+    <string name="events_2_cost">Free</string>
+    <string name="events_2_coordinates">50.081326,8.242725</string>
+
+    <string name="events_3_g_name">Theatrium</string>
+    <string name="events_3_e_name">JUNE 10/11 2017</string>
+    <string name="events_3_hours">8am-Midnight</string>
+    <string name="events_3_cost">Free</string>
+    <string name="events_3_coordinates">50.082166,8.244771</string>
+
+    <string name="events_4_g_name">Rheingau Music Fest</string>
+    <string name="events_4_e_name">18 JUNE to 27 AUG 2017</string>
+    <string name="events_4_hours">TBD to Locations Vary</string>
+    <string name="events_4_cost">Free to 40</string>
+    <string name="events_4_coordinates">50.084233,8.245764</string>
+
+    <string name="events_5_g_name">Christmas Market</string>
+    <string name="events_5_e_name">NOV 22 to DEC 23 2016</string>
+    <string name="events_5_hours">8am-Midnight</string>
+    <string name="events_5_cost">Free</string>
+    <string name="events_5_coordinates">50.081326,8.242725</string>
+
+    <string name="events_6_g_name">Oktoberfest</string>
+    <string name="events_6_e_name">SEP 29 to OCT 10 2017</string>
+    <string name="events_6_hours">Daily 9am-Midnight</string>
+    <string name="events_6_cost">Free</string>
+    <string name="events_6_coordinates">50.081326,8.242725</string>
+
+    <string name="events_7_g_name">Fasching (Carnival)</string>
+    <string name="events_7_e_name">FEB 3 to MAR 1 2017</string>
+    <string name="events_7_hours">Daily 9am to Midnight</string>
+    <string name="events_7_cost">Higher-end</string>
+    <string name="events_7_coordinates">50.081326,8.242725</string>
+
+    <string name="events_8_g_name">Wine Ball</string>
+    <string name="events_8_e_name">MAY 16 2017</string>
+    <string name="events_8_hours">8pm-Midnight</string>
+    <string name="events_8_cost">50</string>
+    <string name="events_8_coordinates">50.081326,8.242725</string>
+
+    <!-- events -->
+    <string name="phrases_1_e_name">My name is Miller.</string>
+    <string name="phrases_1_g_name">Mein Name ist Müller.</string>
+
+    <string name="phrases_2_e_name">How are you?</string>
+    <string name="phrases_2_g_name">Wie geht\'s?</string>
+
+    <string name="phrases_3_e_name">Excuse me</string>
+    <string name="phrases_3_g_name">Entschuldigen Sie</string>
+
+    <string name="phrases_4_e_name">Where is the market?</string>
+    <string name="phrases_4_g_name">Wo ist der Markt?</string>
+
+    <string name="phrases_5_e_name">I would like to go to the city center.</string>
+    <string name="phrases_5_g_name">Ich möchte ins Stadtzentrum.</string>
+
+    <string name="phrases_6_e_name">I would like to go to the train station.</string>
+    <string name="phrases_6_g_name">Ich möchte zum Bahnhof.</string>
+
+    <string name="phrases_7_e_name">How much is the entrance fee?</string>
+    <string name="phrases_7_g_name">Wie viel kostet der Eintritt?</string>
+
+    <string name="phrases_8_e_name">Do you have a vacant room?</string>
+    <string name="phrases_8_g_name">Haben Sie ein Zimmer frei?</string>
+
+    <string name="phrases_9_e_name">What time do you serve breakfast?</string>
+    <string name="phrases_9_g_name">Um wie viel Uhr gibt es Frühstück?</string>
+
+    <string name="phrases_10_e_name">Bye!</string>
+    <string name="phrases_10_g_name">Tschüs!</string>
 </resources>

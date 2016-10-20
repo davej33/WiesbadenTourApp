@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class EventsFragment extends Fragment {
 
     //create blank constructor
-    public EventsFragment(){
+    public EventsFragment() {
 
     }
 
@@ -30,30 +30,31 @@ public class EventsFragment extends Fragment {
 
         // create and initialize array list
         final ArrayList<TourInfoItem> items = new ArrayList<TourInfoItem>();
-        items.add(new TourInfoItem("Easter Market","MAR 10-12 2017","9-Midnight","Free",
-                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-eastermarket.php", "50.081326,8.242725",
+        items.add(new TourInfoItem(R.string.events_1_g_name, R.string.events_1_e_name, R.string.events_1_hours, R.string.events_1_cost,
+                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-eastermarket.php", R.string.events_1_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Wine Ball","MAY 16 2017","8-Midnight","50",
-                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-wine-ball.php", "50.084722,8.2475",
+        items.add(new TourInfoItem(R.string.events_2_g_name, R.string.events_2_e_name, R.string.events_2_hours, R.string.events_2_cost,
+                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-cityfestival.php", R.string.events_2_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("City Festival","SEP 21-23 2017","9-Midnight","Free",
-                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-cityfestival.php", "50.081326,8.242725",
+        items.add(new TourInfoItem(R.string.events_3_g_name, R.string.events_3_e_name, R.string.events_3_hours, R.string.events_3_cost,
+                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-wilhelmstrassenfest.php", R.string.events_3_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Theatrium","JUNE 10-11 2017","9-Midnight","Free",
-                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-wilhelmstrassenfest.php", "50.082166,8.244771",
+        items.add(new TourInfoItem(R.string.events_4_g_name, R.string.events_4_e_name, R.string.events_4_hours, R.string.events_4_cost,
+                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-rheingaumusicfestival.php", R.string.events_4_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Rheingau Music Fest","18 JUNE to 27 AUG 2017","TBD - Locations Vary","Free - 40",
-                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-rheingaumusicfestival.php", "50.084233,8.245764",
+        items.add(new TourInfoItem(R.string.events_5_g_name, R.string.events_5_e_name, R.string.events_5_hours, R.string.events_5_cost,
+                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-christmasmarket.php", R.string.events_5_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Christmas Market","NOV 22 - DEC 23 2016","9-Midnight","Free",
-                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-christmasmarket.php", "50.081326,8.242725",
+        items.add(new TourInfoItem(R.string.events_6_g_name, R.string.events_6_e_name, R.string.events_6_hours, R.string.events_6_cost,
+                "http://wiesbaden-oktoberfest.de", R.string.events_6_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Oktoberfest","SEP 29 - OCT 10 2017","4-Midnight","Free - 30",
-                "http://wiesbaden-oktoberfest.de", "50.081326,8.242725",
+        items.add(new TourInfoItem(R.string.events_7_g_name, R.string.events_7_e_name, R.string.events_7_hours, R.string.events_7_cost,
+                "https://www.wiesbaden.de/en/living-in-wiesbaden/festivities-markets/festivities/carnival.php", R.string.events_7_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
-        items.add(new TourInfoItem("Fasching (Carnival)","FEB 3 - MAR 1 2017","24/7","Free",
-                "https://www.wiesbaden.de/en/living-in-wiesbaden/festivities-markets/festivities/carnival.php", "50.081326,8.242725",
+        items.add(new TourInfoItem(R.string.events_8_g_name, R.string.events_8_e_name, R.string.events_8_hours, R.string.events_8_cost,
+                "https://www.wiesbaden.de/en/tourism/events/twelve-fabulous-reasons/12r-wine-ball.php", R.string.events_8_coordinates,
                 R.mipmap.events, R.mipmap.calendar, R.mipmap.clock, R.mipmap.euro));
+
 
         // create adapter
         TourInfoItemAdapter adapter = new TourInfoItemAdapter(getActivity(), items, R.color.primaryLight);

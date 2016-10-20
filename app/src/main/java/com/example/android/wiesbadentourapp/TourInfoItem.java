@@ -7,12 +7,12 @@ package com.example.android.wiesbadentourapp;
 public class TourInfoItem {
 
     // variables
-    private String mTourItemNameGerman;
-    private String mTourItemNameDefault;
-    private String mHoursOpen;
-    private String mCost;
+    private int mTourItemNameGerman;
+    private int mTourItemNameDefault;
+    private int mHoursOpen = NO_IMAGE_PROVIDED;
+    private int mCost;
     private String mWebsite;
-    private String mCoordinates;
+    private int mCoordinates;
     private int mTopIcon = NO_IMAGE_PROVIDED;
     private int mSecondIcon = NO_IMAGE_PROVIDED;
     private int mThirdIcon = NO_IMAGE_PROVIDED;
@@ -22,8 +22,8 @@ public class TourInfoItem {
     private int mAudioClip;
 
     // constructor with image for sites and food/drink
-    public TourInfoItem (String germanName, String defaultName, String hours, String cost, int image,
-                         String website, String coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
+    public TourInfoItem (int germanName, int defaultName, int hours, int cost, int image,
+                         String website, int coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
         mTourItemNameGerman = germanName;
         mTourItemNameDefault = defaultName;
         mHoursOpen = hours;
@@ -38,8 +38,8 @@ public class TourInfoItem {
     }
 
     // constructor without image for events fragment
-    public TourInfoItem (String germanName, String defaultName, String hours, String cost, String website,
-                         String coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
+    public TourInfoItem (int germanName, int defaultName, int hours, int cost, String website,
+                         int coordinates, int topIcon, int secondIcon, int thirdIcon, int bottomIcon){
         mTourItemNameGerman = germanName;
         mTourItemNameDefault = defaultName;
         mHoursOpen = hours;
@@ -54,7 +54,7 @@ public class TourInfoItem {
     }
 
     // constructor for phrases fragment
-    public TourInfoItem (String germanName, String defaultName, int audioClip, int topIcon, int secondIcon){
+    public TourInfoItem (int germanName, int defaultName, int audioClip, int topIcon, int secondIcon){
         mTourItemNameGerman = germanName;
         mTourItemNameDefault = defaultName;
         mAudioClip = audioClip;
@@ -64,19 +64,19 @@ public class TourInfoItem {
 
 
     // getter methods
-    public String getmTourItemNameGerman() {
+    public int getmTourItemNameGerman() {
         return mTourItemNameGerman;
     }
 
-    public String getmTourItemNameDefault() {
+    public int getmTourItemNameDefault() {
         return mTourItemNameDefault;
     }
 
-    public String getmHoursOpen() {
+    public int getmHoursOpen() {
         return mHoursOpen;
     }
 
-    public String getmCost() {
+    public int getmCost() {
         return mCost;
     }
 
@@ -88,7 +88,7 @@ public class TourInfoItem {
         return mWebsite;
     }
 
-    public String getmCoordinates() {
+    public int getmCoordinates() {
         return mCoordinates;
     }
 
@@ -106,7 +106,7 @@ public class TourInfoItem {
 
     public boolean hasIcons(){ return mThirdIcon != NO_IMAGE_PROVIDED; }
 
-    public boolean hasText(){ return mHoursOpen != null;}
+    public boolean hasText(){ return mHoursOpen != NO_IMAGE_PROVIDED;}
 
     public boolean hasImage() {
         return mImageResourceID != NO_IMAGE_PROVIDED;
