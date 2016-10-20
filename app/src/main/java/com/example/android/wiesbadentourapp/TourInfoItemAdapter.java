@@ -130,6 +130,10 @@ public class TourInfoItemAdapter extends ArrayAdapter<TourInfoItem> {
             secondLine.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
                     0, 1f));
 
+            // add padding
+            firstLine.setPadding(4,8,0,4);
+            secondLine.setPadding(4,4,0,4);
+
             // change item height
             itemLayout.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, 100));
 
